@@ -1,0 +1,503 @@
+:root {
+    --main-clr: #1B7DFF;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    font-family: 'Lato', serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    background-color: var(--main-clr);
+}
+
+.header {
+    max-width: 100vw;
+    color: #fff;
+    background-image: linear-gradient(180.00deg, rgba(53, 66, 103, 0), rgb(21, 24, 36) 95.036%), url(../img/header-bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    padding: 56px 191px 352px 191px;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__list {
+    display: flex;
+    gap: 82px;
+}
+
+.menu__item {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.header__title {
+    max-width: 612px;
+    margin-top: 176px;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 60px;
+}
+
+.header__text {
+    max-width: 546px;
+    margin-top: 22px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.header__search {
+    margin-top: 59px;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.search__list {
+    display: flex;
+    gap: 60px;
+}
+
+.search__item {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 0 37px 24px 0;
+    border-bottom: 3px solid #fff;
+}
+
+.search__item-link {
+    position: relative;
+    padding-left: 44px;
+}
+
+.search__item-link::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    top: 0;
+    left: 0;
+}
+
+.search__btn {
+    padding: 15px 39px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+}
+
+.section {
+    max-width: 100vw;
+    padding: 0 89px 89px;
+}
+
+.benefits__section {
+    height: 525px;
+}
+
+.benefits__container {
+    padding: 99px 93px;
+    background-color: #fff;
+    position: relative;
+    top: -230px;
+    box-shadow: 0px 2px 20px 0px rgba(21, 24, 36, 0.16);
+}
+
+.section__title {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 42px;
+    color: #102746;
+}
+
+.benefits__title {
+    margin-bottom: 120px;
+}
+
+.benefits__list {
+    display: flex;
+    /* gap: 55px; */
+    justify-content: space-between;
+}
+
+.benefits__item-img {
+    margin-bottom: 37px;
+}
+
+.benefits__item-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 26px;
+}
+
+.benefits__item-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 310px;
+    margin-bottom: 39px;
+}
+
+.benefits__item-link,
+.prefecture__item-link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--main-clr);
+    position: relative;
+}
+
+.benefits__item-link::after,
+.trips__title-link::after,
+.prefecture__item-link::after {
+    content: '';
+    position: absolute;
+    background-image: url(../img/arrow.svg);
+    width: 33px;
+    height: 8px;
+    left: 130px;
+    top: 5px;
+}
+
+.trips__title {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.trips__title::after,
+.visit__title::after {
+    content: '';
+    width: 253px;
+    height: 3px;
+    background-color: var(--main-clr);
+    position: absolute;
+    top: 45px;
+    left: 0;
+}
+
+.trips__title-link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--main-clr);
+    position: relative;
+    padding-right: 60px;
+}
+
+.trips__title-link::after {
+    left: 95px;
+    top: 7px;
+}
+
+.trips__list {
+    margin-top: 46px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 354px 283px;
+    grid-template-areas:
+        "a a a b b b"
+        "c c d d e e";
+}
+
+.trips__item-link {
+    display: flex;
+    align-items: flex-end;
+    padding: 29px;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #fff;
+    filter: brightness(75%);
+}
+
+.trips__item-link:hover {
+    filter: brightness(100%);
+}
+
+.fuji {
+    grid-area: a;
+}
+
+.fuji-link {
+    background-image: url(../img/fuji.png);
+}
+
+.kyoto {
+    grid-area: b;
+}
+
+.kyoto-link {
+    background-image: url(../img/kyoto.png);
+}
+
+.tokyo {
+    grid-area: c;
+}
+
+.tokyo-link {
+    background-image: url(../img/tokyo.png);
+}
+
+.niigata {
+    grid-area: d;
+}
+
+.niigata-link {
+    background-image: url(../img/niigata.png);
+}
+
+.sapporo {
+    grid-area: e;
+}
+
+.sapporo-link {
+    background-image: url(../img/sapporo.png);
+}
+
+.prefecture__list {
+    display: flex;
+    flex-direction: column;
+    gap: 77px;
+}
+
+.prefecture__item {
+    display: flex;
+    gap: 108px;
+}
+
+.prefecture__item-info {
+    padding: 26px 47px;
+}
+
+.prefecture__item-title {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-bottom: 85px;
+}
+
+.prefecture__item-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 519px;
+    margin-bottom: 58px;
+}
+
+.prefecture__item-link::after {
+    left: 170px;
+}
+
+.visit__title {
+    position: relative;
+    margin-bottom: 64px;
+}
+
+.visit__list {
+    display: grid;
+    gap: 60px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.visit__item-img {
+    width: 386px;
+    height: 377px;
+    background-position: bottom;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 45px;
+}
+
+.visit__item-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 48px 15px 25px;
+    color: #fff;
+    background: rgba(21, 24, 36, 0.6);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.visit__item-stats {
+    display: flex;
+    gap: 34px;
+}
+
+.visit__item-likes {
+    position: relative;
+}
+
+.visit__item-likes::after {
+    content: '';
+    width: 16px;
+    height: 15px;
+    background-image: url(../img/like.svg);
+    position: absolute;
+    top: 5px;
+    left: 37px;
+}
+
+.visit__item-comments {
+    position: relative;
+}
+
+.visit__item-comments::after {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-image: url(../img/comment.svg);
+    position: absolute;
+    top: 5px;
+    left: 30px;
+}
+
+.visit__item-text {
+    max-width: 392px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 31px;
+}
+
+.visit__item-link {
+    padding: 12px 19px;
+    background-color: var(--main-clr);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.visit__nagoya {
+    background-image: url(../img/nagoya.png);
+}
+
+.visit__niigata {
+    background-image: url(../img/niigata-2.png);
+}
+
+.visit__osaka {
+    background-image: url(../img/osaka.png);
+}
+
+.visit__saitama {
+    background-image: url(../img/saitama.png);
+}
+
+.visit__ueno {
+    background-image: url(../img/ueno.png);
+}
+
+.visit__shibuya {
+    background-image: url(../img/shibuya.png);
+}
+
+.video__section {
+    padding: 0;
+}
+
+.video {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+}
+
+.footer {
+    background-color: #0E1D28;
+    padding: 119px 167px 118px 194px;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__logo img {
+    width: 170px;
+}
+
+.footer__lists {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 140px;
+    color: #fff;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.footer__item {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.footer__item-main {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
